@@ -16,11 +16,11 @@ if sys.argv[-1] == "publish":
 
 readme = open("README.rst").read()
 history = open("HISTORY.rst").read().replace(".. :changelog:", "")
-import djangorestframework_camel_case
+#import djangorestframework_camel_case
 
 setup(
     name="djangorestframework-camel-case",
-    version=djangorestframework_camel_case.__version__,
+    version="1.2.0",
     description="Camel case JSON support for Django REST framework.",
     long_description=readme + "\n\n" + history,
     long_description_content_type="text/x-rst",
@@ -28,7 +28,6 @@ setup(
     author_email="vbabiy86@gmail.com",
     url="https://github.com/vbabiy/djangorestframework-camel-case",
     packages=["djangorestframework_camel_case"],
-    package_dir={"djangorestframework_camel_case": "djangorestframework_camel_case"},
     include_package_data=True,
     python_requires=">=3.5",
     install_requires=[],
